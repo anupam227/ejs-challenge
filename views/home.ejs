@@ -1,0 +1,9 @@
+
+<%- include("partials/header"); -%>
+<p><%= par %></p>
+<% posts.forEach(function(letter){ %>
+	<h1><%= letter.title %></h1>
+	<br>
+	<p><%= letter.content %></p>
+<% }); %>
+<%- include("partials/footer"); -%>
